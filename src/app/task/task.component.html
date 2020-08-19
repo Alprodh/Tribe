@@ -1,5 +1,16 @@
 <div class="card mb-3">
   <div class="card-body">
-
+    <h5 class="card-title">{{repeatedTasksDto.taskName}} {{repeatedTasksDto.goalName}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+      <div *ngIf="repeatedTasksDto.status === 'done'">
+        <i class="far fa-check-square"></i>
+      </div>
+      <div *ngIf="repeatedTasksDto.status === 'to do'">
+        <i class="far fa-square"></i>
+      </div>
+      <div *ngIf="repeatedTasksDto.status === 'canceled'">
+        <i class="far fa-minus-square"></i>
+      </div>
+    </h6>
   </div>
 </div>

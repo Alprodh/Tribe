@@ -1,1 +1,1 @@
-export class RepeteadTaskDto {}
+export class RepeatedTaskDto {}

@@ -1,5 +1,5 @@
-import { RepeatedTaskDto } from './../../../tribe-app/src/app/Dto/RepeatedTaskDto';
-import { Component, OnInit } from '@angular/core';
+import { RepeatedTaskDto } from './../Dto/RepeatedTaskDto';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-task',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task.component.css']
 })
 export class TaskComponent implements OnInit {
-  repeatedTasksDto: RepeatedTaskDto;
+  @Input()
+  repeatedTaskDto: RepeatedTaskDto;
 
   constructor() { }
 
