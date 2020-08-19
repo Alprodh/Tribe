@@ -1,4 +1,4 @@
-import { RepeatedTaskDto } from './../Dto/RepeatedTaskDto';
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class FeedBuzzComponent implements OnInit {
 
   constructor(
-    protected repeatedTask: RepeatedTaskDto
+    
   ) { }
 
   ngOnInit(): void {
