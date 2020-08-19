@@ -8,4 +8,4 @@ https://color-team.github.io/tribe-app/
 
 # Screenshot
 
-![](images/feedbuzz.png)
+![](images/feedbuzz.PNG)
