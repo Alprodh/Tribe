@@ -2,4 +2,4 @@
 
 Visit my website at : 
 
-https://github.io/color-team/tribe-app/
+https://color-team.github.io/tribe-app/

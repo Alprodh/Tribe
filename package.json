@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href https://github.io/color-team/tribe-app/",
+    "build": "ng build --prod --base-href https://color-team.github.io/tribe-app/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
