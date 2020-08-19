@@ -11,6 +11,12 @@ export enum WeekDays {
 }
 
 export class Task {
-  constructor( public name: string, public description: string, public time: Date, public deadline: Date,
-               public repetition: WeekDays[], public taskList: RepetedTask[]){}
+  constructor(
+    public name: string,
+    public description: string,
+    public time: Date,
+    public deadline: Date,
+    public repetition: WeekDays[],
+    public taskList?: RepetedTask[]
+    ){}
 }
