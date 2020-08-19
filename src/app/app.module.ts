@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { TopBarAppComponent } from './top-bar-app/top-bar-app.component';
 import { TaskComponent } from './task/task.component';
 import { FeedBuzzComponent } from './feed-buzz/feed-buzz.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FeedBuzzComponent } from './feed-buzz/feed-buzz.component';
     FeedBuzzComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
