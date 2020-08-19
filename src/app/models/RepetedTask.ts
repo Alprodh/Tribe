@@ -10,10 +10,10 @@ export enum Status {
 
 export class RepetedTask extends Publication{
   constructor(
-    protected content:string,
-    protected postAt:Date,
+    protected content: string,
+    protected postAt: Date,
     public statut: Status,
-    protected publicationPictures?:PublicationPictures
+    protected publicationPictures?: PublicationPictures
     ){
       super(
         content,

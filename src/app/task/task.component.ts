@@ -10,7 +10,8 @@ export class TaskComponent implements OnInit {
   @Input()
   repeatedTaskDto: RepeatedTaskDto;
 
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit(): void {
   }

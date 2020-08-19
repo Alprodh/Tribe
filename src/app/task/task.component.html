@@ -2,15 +2,22 @@
   <div class="card-body">
     <h5 class="card-title">{{repeatedTasksDto.taskName}} {{repeatedTasksDto.goalName}}</h5>
     <h6 class="card-subtitle mb-2 text-muted">
-      <div *ngIf="repeatedTasksDto.status === 'done'">
+      <div *ngIf="repeatedTaskDto.status === 'done'">
         <i class="far fa-check-square"></i>
       </div>
-      <div *ngIf="repeatedTasksDto.status === 'to do'">
+      <div *ngIf="repeatedTaskDto.status === 'to do'">
         <i class="far fa-square"></i>
       </div>
-      <div *ngIf="repeatedTasksDto.status === 'canceled'">
+      <div *ngIf="repeatedTaskDto.status === 'canceled'">
         <i class="far fa-minus-square"></i>
       </div>
+      {{ repeatedTaskDto.postAt }} - {{ repeatedTaskDto.locationName }}
     </h6>
+    <p *ngIf="{{ repeatedTaskDto.content !== null }}" class="card-text">{{ repeatedTaskDto.content }}</p>
   </div>
+  <img *ngIf="{{ repeatedTaskDto.publicationPictures !== null }}" class="card-img-top" src="{{ repeatedTaskDto.publicationPictures.listPictures[0] }}">
+  <i class="far fa-image"></i>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><i class="far fa-comment-alt"></i> Commenter <i class="fas fa-share"></i> Partager</li>
+  </ul>
 </div>
