@@ -1,3 +1,4 @@
+import { Goal } from './goal';
 
 export class User {
   constructor(
@@ -7,7 +8,8 @@ export class User {
     protected pseudo:string,
     protected email:string,
     protected pass:string,
-    protected registrationDate:Date
+    protected registrationDate:Date,
+    protected goal?: Goal
   ) {}
 
 }
