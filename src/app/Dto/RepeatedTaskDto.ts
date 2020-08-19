@@ -6,10 +6,11 @@ export class RepeatedTaskDto extends RepetedTask {
     public taskName: string,
     public goalName: string,
     public locationName: string,
-    protected content: string,
-    protected postAt: Date,
+    public timeTask: Date,
+    public content: string,
+    public postAt: Date,
     public status: Status,
-    protected publicationPictures?: PublicationPictures
+    public publicationPictures?: PublicationPictures
   ){
     super(
       content,
