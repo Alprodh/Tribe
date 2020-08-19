@@ -1,4 +1,6 @@
-import { RepeatedTaskDto } from './../../../tribe-app/src/app/Dto/RepeatedTaskDto';
+import { DataService } from './../services/data.service';
+import { RepeatedTaskDto } from './../Dto/RepeatedTaskDto';
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task.component.css']
 })
 export class TaskComponent implements OnInit {
-  repeatedTasksDto: RepeatedTaskDto;
+  repeatedTasksDto: RepeatedTaskDto[];
 
-  constructor() { }
+  constructor(
+    protected service: DataService
+  ) { }
 
   ngOnInit(): void {
   }
