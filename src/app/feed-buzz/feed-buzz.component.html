@@ -1,1 +1,3 @@
-<p>feed-buzz works!</p>
+<div *ngFor="let repeatedTaskDto of repeatedTasksDto" class="col-12 mt-3">
+  <app-task [repeatedTaskDto]='repeatedTaskDto'></app-task>
+</div>

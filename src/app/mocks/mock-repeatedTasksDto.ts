@@ -4,12 +4,13 @@ import { PublicationPictures } from '../models/publicationPictures';
 import { Picture } from '../models/picture';
 
 
-export const repeatedTaskDto = [
+export const mockRepeatedTaskDto = [
   new RepeatedTaskDto (
     'Ajouter component',
     'Réussir la formation',
     'Devant mon ordi',
-    null,
+    new Date(2020, 8, 20, 16, 0, 0),
+    '',
     new Date(2020, 8, 20, 15, 0, 0),
     Status.toDo
   ),
@@ -17,7 +18,8 @@ export const repeatedTaskDto = [
     'Manger des frites',
     'Rester gros',
     'A la baraque à frites',
-    null,
+    new Date(2020, 8, 20, 12, 0, 0),
+    '',
     new Date(2020, 8, 20, 12, 0, 0),
     Status.toDo
   ),
@@ -25,6 +27,7 @@ export const repeatedTaskDto = [
     'Manger un chawarma',
     'Rester gros',
     'Chez Momo',
+    new Date(2020, 8, 20, 12, 0, 0),
     'C\'était bien bon !',
     new Date(2020, 8, 20, 12, 0, 0),
     Status.done,
