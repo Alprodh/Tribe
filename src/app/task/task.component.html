@@ -13,9 +13,9 @@
       </div>
       {{ repeatedTaskDto.postAt }} - {{ repeatedTaskDto.locationName }}
     </h6>
-    <p *ngIf="{{ repeatedTaskDto.content !== null }}" class="card-text">{{ repeatedTaskDto.content }}</p>
+    <p *ngIf="{{ repeatedTaskDto.content != null }}" class="card-text">{{ repeatedTaskDto.content }}</p>
   </div>
-  <img *ngIf="{{ repeatedTaskDto.publicationPictures !== null }}" class="card-img-top" src="{{ repeatedTaskDto.publicationPictures.listPictures[0] }}">
+  <img *ngIf="{{ repeatedTaskDto.publicationPictures != null }}" class="card-img-top" src="{{ repeatedTaskDto.publicationPictures.listPictures[0] }}">
   <i class="far fa-image"></i>
   <ul class="list-group list-group-flush">
     <li class="list-group-item"><i class="far fa-comment-alt"></i> Commenter <i class="fas fa-share"></i> Partager</li>
