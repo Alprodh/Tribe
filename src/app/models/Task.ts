@@ -1,3 +1,5 @@
+import { RepetedTask } from './RepetedTask';
+
 export enum WeekDays {
   Monday = 'MONDAY',
   Tuesday = 'TUESDAY',
@@ -9,5 +11,6 @@ export enum WeekDays {
 }
 
 export class Task {
-  constructor( public name: string, public description: string, public time: Date, public deadline: Date, public repetition: WeekDays[]){}
+  constructor( public name: string, public description: string, public time: Date, public deadline: Date,
+               public repetition: WeekDays[], public taskList: RepetedTask[]){}
 }

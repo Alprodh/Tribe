@@ -1,9 +1,10 @@
 export enum Status {
   done = 'done',
   toDo = 'to do',
-  canceled = 'canceled'
+  canceled = 'canceled',
+  closedAt = 'closed at'
 }
 
 export class RepetedTask {
-  constructor( public statut: Status){}
+  constructor( public date: Date, public statut: Status){}
 }
