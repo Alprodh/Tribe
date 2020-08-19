@@ -1,7 +1,7 @@
-import { Picture } from "./picture";
+import { Picture } from './picture';
 
 export class PublicationPictures{
   constructor(
-    protected listPictures:Picture[]
+    protected listPictures: Picture[]
   ){}
 }
